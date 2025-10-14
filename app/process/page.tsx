@@ -1,0 +1,81 @@
+import React from 'react';
+import Head from 'next/head';
+import Nav from "../components/Nav";
+import Image from 'next/image';
+import MacbookSC from '../image/Macbook.png';
+import WindowSC from '../image/Window.jpeg';
+
+export default function Process() {
+    return(
+        <>
+        <Head>
+            <title>香港電子產品回收流程 3步快速賣機 | Comein 高價現金收購 iPhone、MacBook</title>
+            <meta name="description" content="Comein 提供最便捷的香港電子產品回收服務！WhatsApp 即時估價，支持旺角門市或上門收機，專業檢測後立即以現金付款，高價回收 iPhone、Samsung、iPad 等二手設備。" />
+        </Head>
+        <Nav/>
+        <main className="my-10 py-5">
+            <h1 className="text-2xl md:text-3xl font-bold px-10">回收流程｜3步極速現金交收</h1>
+            <h2 className="text-lg md:text-xl px-10">手機回收／高價回收服務</h2>
+            <div className="">
+                <div className="p-10">
+                    {/* ONE */}
+                    <div>
+                        <p className="text-lg">1）聯絡方式</p>
+                        <p className="pb-5 pl-3 text-sm">請透過WhatsApp與我們聯繫。</p>
+                    </div>
+                    {/* TWO */}
+                    <div>
+                    <p className="text-lg">2）提交設備資訊</p>
+                    {/* MAC */}
+                    <div>
+                        <p className="pt-2 pl-3 text-sm font-bold">MacOS裝置</p>
+                        <div className="pb-5 pl-3 text-sm">請提供以下資訊：
+                            <br />- 品牌
+                            <br />- 產品名稱
+                            <br />- 尺寸
+                            <br />- 年份
+                            <br />- 規格（包括CPU、RAM、儲存容量）
+                            <br /><br />如Macbook取得規格方式：
+                            <br />路徑：屏幕左上方Apple Logo 「關於本機」並截圖
+                            <div className='pt-3'>
+                            <Image src={MacbookSC} alt={''}></Image>
+                            </div>
+                        </div>
+                    </div>
+                    {/* WINDOW */}
+                    <div>
+                        <p className="pt-2 pl-3 text-sm font-bold">Window裝置</p>
+                        <div className="pb-5 pl-3 text-sm">請提供以下資訊：
+                            <br />- 品牌
+                            <br />- 產品名稱
+                            <br />- 尺寸
+                            <br />- 年份
+                            <br />- 規格（包括GPU、CPU、RAM、儲存容量）
+                            <br /><br />如Notebook裝置 取得規格方式：
+                            <br />路徑：檔案總管 {'>'} 本機 {'>'} 右鍵點選「內容」並截圖
+                            <br />或左鍵點選「內容」查看「儲存空間」
+                            <br />或透過：右鍵點選「內容」 {'>'}  「裝置管理員」 {'>'}  「顯示卡」以確認GPU型號
+                            <div className='pt-3'>
+                            <Image src={WindowSC} alt={''}></Image>
+                            </div>
+                        </div>
+                    </div>    
+                    </div>
+                    {/* THREE */}
+                    <div>
+                    <p className="text-lg">3）交收地點</p>
+                    <p className="pt-2 pl-3 text-sm font-bold">門市交收（旺角）</p>
+                    <p className="pb-5 pl-3 text-sm">香港山東街47-51號新之城商業大廈3樓304室</p>
+                    <p className="pt-2 pl-3 text-sm font-bold">上門交收</p>
+                    <p className="pb-5 pl-3 text-sm">可安排專人上門回收，詳情請與我們確認。</p>   
+                    </div>
+                </div>
+
+                <div>
+                    <p className="text-lg font-bold px-10">如有任何疑問，歡迎隨時聯繫我們。 </p>
+                </div>
+            </div>
+        </main>
+        </>
+    );
+};
