@@ -1,3 +1,18 @@
+## Version
+
+node version
+v18.20.8
+
+npm version
+10.8.2
+
+"next": "15.5.4",
+        "react": "19.1.0",
+        "react-dom": "19.1.0",
+        "react-icons": "^5.5.0"
+        "tailwindcss": "^4"
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
