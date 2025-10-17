@@ -1,14 +1,15 @@
 import React from 'react';
-import Head from 'next/head';
-import Nav from "../components/Nav";
+import Nav from "../../components/Nav";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "香港電子產品回收服務 高價收購/維修/資料處理 | Comein 專業二手買賣",
+    description: "Comein 提供一站式香港電子產品服務：手機/電腦高價回收、Trade-In換新、專業檢測、資料移轉與清除。旺角門市或全港上門服務，企業辦公室設備回收，現金交易即日付款！",
+  };
 
 export default function ProductService() {
     return(
         <>
-        <Head>
-            <title>香港電子產品回收服務 高價收購/維修/資料處理 | Comein 專業二手買賣</title>
-            <meta name="description" content="Comein 提供一站式香港電子產品服務：手機/電腦高價回收、Trade-In換新、專業檢測、資料移轉與清除。旺角門市或全港上門服務，企業辦公室設備回收，現金交易即日付款！" />
-        </Head>
         <Nav/>
         <main className="my-10 py-5">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold px-10">產品及服務</h1>
@@ -27,8 +28,8 @@ export default function ProductService() {
                 <p>6. 維修智能產品</p>
                 <p className="pb-5 pl-3">提供各類智能設備（手機、平板、筆電等）的專業維修服務，包含螢幕更換、電池維修、主機板檢測等，使用原廠或高品質零件。  </p>
                 <p>7. 賣機/保養</p>
-                <p className="pl-3">- 賣機：協助顧客出售二手設備，提供市場價格評估。  </p>
-                <p className="pb-5 pl-3">- 保養：針對已售出的二手設備，可加購延長保固服務，享受後續技術支援與維修保障。  </p>
+                <p className="pl-3">- 賣機：本店出售高品質二手電子產品，為客人精準篩選合適的電子產品，馮著理念："買果個安心，用果個開心"服務大眾。  </p>
+                <p className="pb-5 pl-3">- 保養：針對已售出的二手設備，保養期長達6個月，享受售後技術支援與維修保障。</p>
                 <p>8. 辦公室設備回收</p>
                 <p className="pb-5 pl-3">專業回收企業汰換的辦公設備（如電腦、印表機、伺服器等），提供到府評估、資料銷毀及環保處理服務，符合企業資安與環保規範。  </p>
                 </div>

@@ -1,39 +1,39 @@
 import Image from 'next/image';
-import Head from 'next/head';
 import Link from 'next/link';
-import Nav from "../components/Nav";
+import Nav from "../../components/Nav";
 // Brand Logo (Top)
-import Apple from '../image/Brand_logo/AppleLogo.png';
-import Lenovo from '../image/Brand_logo/Lenovo-Logo.png';
-import Samsung from '../image/Brand_logo/Samsung-Logo.png';
-import Razer from '../image/Brand_logo/Razer-Logo.jpg';
-import Asus from '../image/Brand_logo/Asus-Logo.png';
-import MSI from '../image/Brand_logo/MSI-Logo-present.jpg';
-import Dell from '../image/Brand_logo/DELL-Logo.png';
+import Apple from '../../public/image/Brand_logo/AppleLogo.png';
+import Lenovo from '../../public/image/Brand_logo/Lenovo-Logo.png';
+import Samsung from '../../public/image/Brand_logo/Samsung-Logo.png';
+import Razer from '../../public/image/Brand_logo/Razer-Logo.jpg';
+import Asus from '../../public/image/Brand_logo/Asus-Logo.png';
+import MSI from '../../public/image/Brand_logo/MSI-Logo-present.jpg';
+import Dell from '../../public/image/Brand_logo/DELL-Logo.png';
 // Brand Logo (Second)
-import Google from '../image/Brand_logo/Google-Logo.png';
-import Microsoft from '../image/Brand_logo/Microsoft-logo.png';
-import Sony from '../image/Brand_logo/Sony-Logo.png';
-import acer from '../image/Brand_logo/acer-logo.png';
-import panasonic from '../image/Brand_logo/panasonic-logo.webp';
+import Google from '../../public/image/Brand_logo/Google-Logo.png';
+import Microsoft from '../../public/image/Brand_logo/Microsoft-logo.png';
+import Sony from '../../public/image/Brand_logo/Sony-Logo.png';
+import acer from '../../public/image/Brand_logo/acer-logo.png';
+import panasonic from '../../public/image/Brand_logo/panasonic-logo.webp';
 // Brand Collection
-import AppleC from '../image/Brand_Collection/Apple.png';
-import LenovoC from '../image/Brand_Collection/Lenovo.png';
-import SamsungC from '../image/Brand_Collection/Samsung.png';
-import RazerC from '../image/Brand_Collection/Razer.png';
-import AsusC from '../image/Brand_Collection/Asus.png';
-import MSIC from '../image/Brand_Collection/MSI.png';
-import DellC from '../image/Brand_Collection/Dell.png';
+import AppleC from '../../public/image/Brand_Collection/Apple.png';
+import LenovoC from '../../public/image/Brand_Collection/Lenovo.png';
+import SamsungC from '../../public/image/Brand_Collection/Samsung.png';
+import RazerC from '../../public/image/Brand_Collection/Razer.png';
+import AsusC from '../../public/image/Brand_Collection/Asus.png';
+import MSIC from '../../public/image/Brand_Collection/MSI.png';
+// import DellC from '../../public/image/Brand_Collection/Dell.png';
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "高價回收電子產品 Apple/Samsung/Lenovo等品牌全收 | Comein 專業二手回收門市",
+    description: "Comein 高價回收 Apple iPhone、MacBook、Samsung 手機、ASUS 筆電、RAZER 電競設備等各類電子產品！全港最高收購價，即時報價，旺角門市或上門交收，免費清除資料保障隱私。",
+  };
 
 
 export default function Type() {
     return(
         <>
-        <Head>
-            <title>高價回收電子產品 Apple/Samsung/Lenovo等品牌全收 | Comein 專業二手回收門市</title>
-            <meta name="description" content="Comein 高價回收 Apple iPhone、MacBook、Samsung 手機、ASUS 筆電、RAZER 電競設備等各類電子產品！全港最高收購價，即時報價，旺角門市或上門交收，免費清除資料保障隱私。" />
-        </Head>
         <Nav/>
         <div className="pb-10">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold  text-center pt-10">高價回收各類電子產品</h1>
@@ -63,7 +63,7 @@ export default function Type() {
                 <p className="px-10 pb-2">
                 二手回收iPhone 手機、iPad 平板電腦、Mac 電腦、Apple Watch 智慧手錶、AirPods 耳機以及 Apple Vision Pro 虛擬實境頭戴設備等電子產品。
                 </p>
-                <Link href="/type" className="rounded-3xl px-3 bg-gray-400 text-white hover:bg-gray-700"><span>了解更多</span></Link>
+                <Link href="/type/Apple" className="rounded-3xl px-3 bg-gray-400 text-white hover:bg-gray-700"><span>了解更多</span></Link>
                 <div className="pt-2 md:pt-5 justify-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Image src={AppleC} style={{ width: 'auto', height: '200px' ,objectFit: 'scale-down' }} alt="" />
                 </div>
@@ -74,7 +74,7 @@ export default function Type() {
                 <p className="px-10 pb-2">
                 二手回收ThinkPad系列、IdeaPad系列、Legion系列、Yoga系列等電子產品。
                 </p>
-                <Link href="/type" className="rounded-3xl px-3 bg-gray-400 text-white hover:bg-gray-700"><span>了解更多</span></Link>
+                <Link href="/type/Lenovo" className="rounded-3xl px-3 bg-gray-400 text-white hover:bg-gray-700"><span>了解更多</span></Link>
                 <div className="pt-2 md:pt-5 justify-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Image src={LenovoC} style={{ width: 'auto', height: '200px' ,objectFit: 'scale-down' }} alt="" />
                 </div>
@@ -85,7 +85,7 @@ export default function Type() {
                 <p className="px-10 pb-2">
                 二手回收Galaxybook系列{'('}Galaxybook Pro, Galaxybook AI, Galaxybook Ultra{')'}、Galaxy Tab平板系列等電子產品。
                 </p>
-                <Link href="/type" className="rounded-3xl px-3 bg-gray-400 text-white hover:bg-gray-700"><span>了解更多</span></Link>
+                <Link href="/type/Samsung" className="rounded-3xl px-3 bg-gray-400 text-white hover:bg-gray-700"><span>了解更多</span></Link>
                 <div className="pt-2 md:pt-5 justify-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Image src={SamsungC} style={{ width: 'auto', height: '200px' ,objectFit: 'scale-down' }} alt="" />
                 </div>
@@ -96,7 +96,7 @@ export default function Type() {
                 <p className="px-10 pb-2">
                 二手回收RAZER Blade 14, Blade 16, Blade 18 等電子產品。
                 </p>
-                <Link href="/type" className="rounded-3xl px-3 bg-gray-400 text-white hover:bg-gray-700"><span>了解更多</span></Link>
+                <Link href="/type/Razer" className="rounded-3xl px-3 bg-gray-400 text-white hover:bg-gray-700"><span>了解更多</span></Link>
                 <div className="pt-2 md:pt-5 justify-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Image src={RazerC} style={{ width: 'auto', height: '200px' ,objectFit: 'scale-down' }} alt="" />
                 </div>
@@ -107,7 +107,7 @@ export default function Type() {
                 <p className="px-10 pb-2">
                 二手回收ASUS Vivo Book, Zenbook, ExpertBook 等電子產品。
                 </p>
-                <Link href="/type" className="rounded-3xl px-3 bg-gray-400 text-white hover:bg-gray-700"><span>了解更多</span></Link>
+                <Link href="/type/Asus" className="rounded-3xl px-3 bg-gray-400 text-white hover:bg-gray-700"><span>了解更多</span></Link>
                 <div className="pt-2 md:pt-5 justify-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Image src={AsusC} style={{ width: 'auto', height: '200px' ,objectFit: 'scale-down' }} alt="" />
                 </div>
@@ -118,7 +118,7 @@ export default function Type() {
                 <p className="px-10 pb-2">
                 二手回收MSI Vector 18 HX, Stealth 16, Raider 18 HX, Summit 13等電子產品。
                 </p>
-                <Link href="/type" className="rounded-3xl px-3 bg-gray-400 text-white hover:bg-gray-700"><span>了解更多</span></Link>
+                <Link href="/type/MSI" className="rounded-3xl px-3 bg-gray-400 text-white hover:bg-gray-700"><span>了解更多</span></Link>
                 <div className="pt-2 md:pt-5 justify-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Image src={MSIC} style={{ width: 'auto', height: '200px' ,objectFit: 'scale-down' }} alt="" />
                 </div>

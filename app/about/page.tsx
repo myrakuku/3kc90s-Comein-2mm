@@ -1,18 +1,18 @@
 import React from 'react';
-import Head from 'next/head';
-import GoogleMap from '../components/GoogleMap';
-import Nav from "../components/Nav";
-import Icon from "../components/icon";
+import GoogleMap from '../../components/GoogleMap';
+import Nav from "../../components/Nav";
+import Icon from "../../components/icon";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "關於 Comein | 15年二手電腦回收專家 | 企業/個人高價收購服務",
+    description: "Comein 擁有15年專業經驗，提供企業與個人高價回收服務。涵蓋Apple、Samsung等品牌筆電、手機、平板，安全交易，金融/教育/工程行業客戶首選！",
+  };
 
 
 export default function About() {
     return(
         <>
-        <Head>
-            <title>關於 Comein | 15年二手電腦回收專家 | 企業/個人高價收購服務</title>
-            <meta name="description" content="Comein 擁有15年專業經驗，提供企業與個人高價回收服務。涵蓋Apple、Samsung等品牌筆電、手機、平板，安全交易，金融/教育/工程行業客戶首選！" />
-        </Head>
         <Nav/>
         <div className="pb-10">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold  text-center pt-10">關於我們</h1>
@@ -36,8 +36,8 @@ export default function About() {
                 </p>
             </div>
             <Icon/>
-            <GoogleMap/>
         </div>
+        <GoogleMap/>
         </>
     );
 };

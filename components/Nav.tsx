@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import logo from '../image/logo.png';
+import logo from '../public/image/logo.png';
 import WhatsAppButton from "../components/WhatsAppButton";
 
 export default function Nav() {

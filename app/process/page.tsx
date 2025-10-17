@@ -1,17 +1,18 @@
 import React from 'react';
-import Head from 'next/head';
-import Nav from "../components/Nav";
+import Nav from "../../components/Nav";
 import Image from 'next/image';
-import MacbookSC from '../image/Macbook.png';
-import WindowSC from '../image/Window.jpeg';
+import MacbookSC from '../../public/image/Macbook.png';
+import WindowSC from '../../public/image/Window.jpeg';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "香港電子產品回收流程 3步快速賣機 | Comein 高價現金收購 iPhone、MacBook",
+    description: "Comein 提供最便捷的香港電子產品回收服務！WhatsApp 即時估價，支持旺角門市或上門收機，專業檢測後立即以現金付款，高價回收 iPhone、Samsung、iPad 等二手設備。",
+  };
 
 export default function Process() {
     return(
         <>
-        <Head>
-            <title>香港電子產品回收流程 3步快速賣機 | Comein 高價現金收購 iPhone、MacBook</title>
-            <meta name="description" content="Comein 提供最便捷的香港電子產品回收服務！WhatsApp 即時估價，支持旺角門市或上門收機，專業檢測後立即以現金付款，高價回收 iPhone、Samsung、iPad 等二手設備。" />
-        </Head>
         <Nav/>
         <main className="my-10 py-5">
             <h1 className="text-2xl md:text-3xl font-bold px-10">回收流程｜3步極速現金交收</h1>
