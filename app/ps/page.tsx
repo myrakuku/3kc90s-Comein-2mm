@@ -4,7 +4,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "香港電子產品回收服務 高價收購/維修/資料處理 | Comein 專業二手買賣",
-    description: "Comein 提供一站式香港電子產品服務：手機/電腦高價回收、Trade-In換新、專業檢測、資料移轉與清除。旺角門市或全港上門服務，企業辦公室設備回收，現金交易即日付款！",
+    description: "Comein 提供一站式香港電子產品服務：手機/電腦高價回收、Trade-In換新、專業檢測、資料移轉與清除。旺角門市或全港上門服務，企業辦公室設備回收，現金交易即日付款！在尋找二手回收的最佳解決方案嗎？我們提供專業的電子產品回收服務，包括iPhone回收、iPad回收、舊手機回收和舊平板回收。無論您是想要更新設備，還是處理不再使用的電子產品，我們都能幫助您輕鬆回收舊設備，讓環保與實惠兼得。立即聯繫我們，開始您的回收旅程！",
+    keywords: 'Price, iphone 16, iphone 17, iphone 17 pro, iphone 17 air, Macbook, Macbook Pro, Macbook Air, Macbook M5, Macbook M4, ipad pro, apple, 旺角二手, 二手Macbook, 二手iPhone, 二手回收, 二手電子產品回收, iPhone 回收, iPad 回收, 舊手機回收, 舊平板回收, Sin Tat Plaza, Apple iphone 11 pro max, iphone 16e, iphone pro max 17, 設備狀況評估, 數據抹除, 設備升級/更新, 保修和服務, 可持續發展, 環保意識, 電子廢物, Comein macbook, 旺角二手回收, 先達二手回收, 專業回收, 星際二手回收, 高價回收, 高價',
+    authors: [{ name: 'Comein', url: 'https://comeinmacbook.com/' }]
   };
 
 export default function ProductService() {
