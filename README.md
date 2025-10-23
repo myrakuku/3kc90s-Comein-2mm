@@ -6,7 +6,7 @@ v18.20.8
 npm version
 10.8.2
 
-"next": "15.5.4 upgraded to 15.5.5",
+"next": "15.5.4",
         "react": "19.1.0",
         "react-dom": "19.1.0",
         "react-icons": "^5.5.0"
