@@ -2,9 +2,9 @@
 import Image from 'next/image';
 import Nav from "../../../components/Nav";
 import SEOContent from "../../../components/SEOContent";
-import Asus1 from "../../../public/image/Brand_Collection/Asus/Asus_1.jpg"
-import Asus2 from "../../../public/image/Brand_Collection/Asus/Asus_2.jpg"
-import Asus3 from "../../../public/image/Brand_Collection/Asus/Asus_3.jpg"
+import Asus1 from "../../../public/image/Brand_Collection/Asus/Asus_1.jpeg"
+import Asus2 from "../../../public/image/Brand_Collection/Asus/Asus_2.jpeg"
+import Asus3 from "../../../public/image/Brand_Collection/Asus/Asus_3.jpeg"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

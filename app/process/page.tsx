@@ -68,7 +68,7 @@ export default function Process() {
                     <div>
                     <p className="text-lg">3）交收地點</p>
                     <p className="pt-2 pl-3 text-sm font-bold">門市交收（旺角）</p>
-                    <p className="pb-5 pl-3 text-sm">香港山東街47-51號新之城商業大廈3樓304室</p>
+                    <p className="pb-5 pl-3 text-sm">旺角山東街47-51號星際城市3樓304號鋪</p>
                     <p className="pt-2 pl-3 text-sm font-bold">上門交收</p>
                     <p className="pb-5 pl-3 text-sm">可安排專人上門回收，詳情請與我們確認。</p>   
                     </div>
